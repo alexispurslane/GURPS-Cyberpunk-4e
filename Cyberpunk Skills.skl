@@ -85,7 +85,24 @@
 					"name": "Computer Operation",
 					"modifier": -8
 				}
-			]
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Interface Plugs"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			}
 		},
 		{
 			"id": "b7d45ae7-1548-4f66-9b33-a40fefcee4d2",
@@ -99,7 +116,35 @@
 					"name": "Computer Operation",
 					"modifier": -8
 				}
-			]
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Cyberdeck"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Interface Plugs"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			}
 		},
 		{
 			"id": "3e9c7755-8e5a-481c-b16d-5a4faa7a74a2",
