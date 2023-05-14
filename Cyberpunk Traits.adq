@@ -1,0 +1,39 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "53a72606-27fb-413f-85f4-a264735d01e1",
+			"type": "trait",
+			"name": "Cyber-Rejection",
+			"reference": "C23",
+			"base_points": -25,
+			"calc": {
+				"points": -25
+			}
+		},
+		{
+			"id": "02baa209-38d0-456e-85c5-cbc5a32e9c0b",
+			"type": "trait",
+			"name": "No Physical Body",
+			"base_points": -100,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"which": "st"
+					}
+				]
+			},
+			"calc": {
+				"points": -100
+			}
+		}
+	]
+}
